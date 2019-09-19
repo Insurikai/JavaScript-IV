@@ -40,4 +40,6 @@ class ProjectManager extends Instructor{
     constructor(args){
         super(args);
     }
+    demo(){}
+    grade(){}
 }
