@@ -20,7 +20,9 @@ class Student extends Person{
     listsSubjects(){
         this.favSubjects.forEach(element => console.log(element));
     }
-    PRAssignment(){}
+    PRAssignment(subject){
+        return `${this.name} has submitted a PR for ${subject}`;
+    }
     sprintChallenge(){}
     
 }
