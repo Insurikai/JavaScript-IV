@@ -23,7 +23,9 @@ class Student extends Person{
     PRAssignment(subject){
         return `${this.name} has submitted a PR for ${subject}`;
     }
-    sprintChallenge(){}
+    sprintChallenge(subject){
+        return `${this.name} has begun sprint challenge on ${subject}`
+    }
     
 }
 class Instructor extends Person{
