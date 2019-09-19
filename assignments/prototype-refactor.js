@@ -12,21 +12,40 @@ function GameObject(obj) {
     this.createdAt = obj.createdAt;
     this.name = obj.name;
     this.dimensions = obj.dimensions;
-  }
-  GameObject.prototype.destroy = function(){ return `${this.name} was removed from the game.`; };
-  
-  function CharacterStats(obj) {
+}
+GameObject.prototype.destroy = function () {
+    return `${this.name} was removed from the game.`;
+};
+
+function CharacterStats(obj) {
     GameObject.call(this, obj);
     this.healthPoints = obj.healthPoints;
-  }
-  CharacterStats.prototype = Object.create(GameObject.prototype);
-  CharacterStats.prototype.takeDamage = function(){ return `${this.name} took damage.`}
+}
+CharacterStats.prototype = Object.create(GameObject.prototype);
+CharacterStats.prototype.takeDamage = function () {
+    return `${this.name} took damage.`
+}
 
-  function Humanoid(obj) {
+function Humanoid(obj) {
     CharacterStats.call(this, obj);
     this.team = obj.team;
     this.weapons = obj.weapons;
     this.language = obj.language;
-  }
-  Humanoid.prototype = Object.create(CharacterStats.prototype);
-  Humanoid.prototype.greet = function() {return `${this.name} offers a greeting in ${this.language}.`}
+}
+Humanoid.prototype = Object.create(CharacterStats.prototype);
+Humanoid.prototype.greet = function () {
+    return `${this.name} offers a greeting in ${this.language}.`
+}
+
+/************* Refactored ************/
+
+class GameObject{
+    constructor(args){
+    this.createdAt = args.createdAt;
+    this.name = args.name;
+    this.dimensions = args.dimensions;
+    }
+    destroy(){
+        return `${this.name} was removed from the game.`;
+    };
+}
