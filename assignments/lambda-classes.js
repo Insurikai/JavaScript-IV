@@ -17,6 +17,9 @@ class Student extends Person{
         this.className = args.className;
         this.favSubjects = args.favSubjects;
     }
+    listsSubjects(){}
+    PRAssignment(){}
+    sprintChallenge(){}
     
 }
 class Instructor extends Person{
