@@ -58,3 +58,14 @@ class CharacterStats extends GameObject {
         return `${this.name} took damage.`
     }
 }
+class Humanoid extends CharacterStats{
+    constructor(args){
+        super(args);
+        this.team = args.team;
+        this.weapons = args.weapons;
+        this.language = args.language;
+    }
+    greet() {
+        return `${this.name} offers a greeting in ${this.language}.`
+    }
+}
