@@ -57,13 +57,13 @@ const stewart = new Student({
     className: "Web24",
     previousBackground: "Bartendor"
 });
-const stewart = new Student({
-    name: 'Stewart',
-    location: 'New Hampshire',
-    age: 37,
-    favSubjects: ["Maths", "Social Studies"],
-    className: "Web24",
-    previousBackground: "Bartendor"
+const amanda = new Student({
+    name: 'Amanda',
+    location: 'Myrtle Beach',
+    age: 20,
+    favSubjects: ["Arts", "Language Arts", "Digital Design", "Photography"],
+    className: "Data Science",
+    previousBackground: "Wedding Photographer"
 });
 
 const sam = new Instructor({
@@ -74,13 +74,13 @@ const sam = new Instructor({
     specialty: 'Front-end',
     catchPhrase: `Perfect.`
 });
-const sam = new Instructor({
-    name: 'Sam',
-    location: 'Inglewood',
-    age: 27,
-    favLanguage: 'JavaScript',
-    specialty: 'Front-end',
-    catchPhrase: `Perfect.`
+const fredrick = new Instructor({
+    name: 'Fredrick',
+    location: 'Branson',
+    age: 22,
+    favLanguage: 'C#',
+    specialty: 'Full Stack',
+    catchPhrase: `Why isn't this working?`
 });
 
 const sabrina = new ProjectManager({
@@ -93,13 +93,14 @@ const sabrina = new ProjectManager({
     gradClassName: "Web24",
     favInstructor: "Daniel"
 });
-const sabrina = new ProjectManager({
-    name: 'Sabrina',
-    location: 'Westchester',
-    age: 33,
-    favLanguage: 'MySQL',
-    specialty: 'Back-end',
-    catchPhrase: `Not like that!`,
-    gradClassName: "Web24",
-    favInstructor: "Daniel"
+const gonzo = new ProjectManager({
+    name: 'Gonz the Great',
+    location: '404',
+    age: 999,
+    favLanguage: 'All of them',
+    specialty: 'Everything',
+    catchPhrase: `Witness my GREATNESS.`,
+    gradClassName: "Web99",
+    favInstructor: "Gonzo"
 });
+
