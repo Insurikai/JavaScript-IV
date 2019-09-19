@@ -41,5 +41,7 @@ class Instructor extends Person{
 class ProjectManager extends Instructor{
     constructor(args){
         super(args);
+        this.gradClassName = args.gradClassName;
+        this.favInstructor = args.favInstructor;
     }
 }
