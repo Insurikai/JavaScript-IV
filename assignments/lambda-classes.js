@@ -95,7 +95,7 @@ const sabrina = new ProjectManager({
 });
 const gonzo = new ProjectManager({
     name: 'Gonz the Great',
-    location: '404',
+    location: '404 Location Unknown',
     age: 999,
     favLanguage: 'All of them',
     specialty: 'Everything',
@@ -104,11 +104,11 @@ const gonzo = new ProjectManager({
     favInstructor: "Gonzo"
 });
 
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
+console.log(stewart.sprintChallenge(stewart.favSubjects[1]));
+console.log(amanda.previousBackground);
+console.log(sam.catchPhrase);
+console.log(fredrick.demo("Javascript IV"));
+console.log(sabrina.debugsCode(stewart, "PHP Fundamentals"));
+console.log(gonzo.grade(amanda, stewart.favSubjects[0]));
+console.log(gonzo.speak());
+console.log(gonzo.standUp('Web99'));
