@@ -2,7 +2,9 @@
 
 class Person{
     constructor(args){
-        
+        this.name = args.name;
+        this.age = args.age;
+        this.location = args.location;
     }
 }
 class Student extends Person{
