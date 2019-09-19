@@ -36,7 +36,7 @@ class Instructor extends Person{
         this.catchPhrase = args.catchPhrase;
     }
     demo(subject){ return `Today we are learning about ${subject}`; }
-    grade(){}
+    grade(student, subject){ return `${student.name} receives a perfect score on ${subject}`; }
 }
 class ProjectManager extends Instructor{
     constructor(args){
