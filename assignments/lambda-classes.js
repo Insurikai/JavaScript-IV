@@ -13,7 +13,11 @@ class Person{
 class Student extends Person{
     constructor(args){
         super(args);
+        this.previousBackground = args.previousBackground;
+        this.className = args.className;
+        this.favSubjects = args.favSubjects;
     }
+    
 }
 class Instructor extends Person{
     constructor(args){
