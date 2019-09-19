@@ -35,11 +35,11 @@ class Instructor extends Person{
         this.favLanguage = args.favLanguage;
         this.catchPhrase = args.catchPhrase;
     }
+    demo(subject){ return `Today we are learning about ${subject}`; }
+    grade(){}
 }
 class ProjectManager extends Instructor{
     constructor(args){
         super(args);
     }
-    demo(){}
-    grade(){}
 }
