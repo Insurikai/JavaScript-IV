@@ -47,3 +47,29 @@ class ProjectManager extends Instructor{
     standUp(channel){ return `${this.name} announces to ${channel}, @channel standy times!​​​​​`;}
     debugsCode(student, subject){ return `${this.name} debugs ${student.name}'s code on ${subject}`;}
 }
+const stewart = new Student({
+    name: 'Stewart',
+    location: 'New Hampshire',
+    age: 37,
+    favSubjects: ["Maths", "Social Studies"],
+    className: "Web24",
+    previousBackground: "Bartendor"
+});
+const sam = new Instructor({
+    name: 'Sam',
+    location: 'Inglewood',
+    age: 27,
+    favLanguage: 'JavaScript',
+    specialty: 'Front-end',
+    catchPhrase: `Perfect.`
+  });
+const sabrina = new ProjectManager({
+    name: 'Sabrina',
+    location: 'Westchester',
+    age: 33,
+    favLanguage: 'MySQL',
+    specialty: 'Back-end',
+    catchPhrase: `Not like that!`,
+    gradClassName: "Web24",
+    favInstructor: "Daniel"
+  });
